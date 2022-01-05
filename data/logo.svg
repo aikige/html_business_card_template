@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="22.715784mm"
+   height="6.9157162mm"
+   viewBox="0 0 22.715784 6.9157162"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="5.1241863"
+     inkscape:cx="34.639646"
+     inkscape:cy="-5.5618587"
+     inkscape:window-width="1312"
+     inkscape:window-height="847"
+     inkscape:window-x="1710"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.642108,-145.04215)">
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next';stroke-width:0.264583"
+       x="95.483337"
+       y="150.74789"
+       id="text1772"><tspan
+         sodipodi:role="line"
+         id="tspan1770"
+         style="stroke-width:0.264583"
+         x="95.483337"
+         y="150.74789">LOGO</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-opacity:1"
+       id="rect3644"
+       width="22.615784"
+       height="6.8157163"
+       x="93.692108"
+       y="145.09215"
+       ry="1.2908554" />
+  </g>
+</svg>

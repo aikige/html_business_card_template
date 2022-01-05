@@ -1,0 +1,94 @@
+@media print {
+	@page {
+		margin: 0;
+		padding: 0;
+		size: 97mm 61mm;	/* 91x55mm + 3mm margin */
+	}
+}
+
+* {
+	font-family: "Avenir Next", "ヒラギノ角ゴシック" !important;
+	font-weight: 400;	/* Regular / Normal */
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 91mm;
+	max-height: 55mm;
+	background-color: white;
+	border: solid #FFF 3mm;
+	/*
+	border: solid #EEE 3mm;
+	*/
+	box-sizing: content-box;
+	background-image: url(logo.svg);
+	background-repeat: no-repeat;
+	background-position: left 9mm top 15mm;
+	background-size: 38mm;
+}
+
+/* Demi Bold Fonts */
+.name_en, .name_jp, .email, .mobile {
+	font-weight: 600;
+}
+/* Font Size */
+.name_jp { font-size: 12pt; }
+.web { font-size: 10pt; }
+
+.base_container {
+	align-content: flex-end;
+	position: absolute;
+	left: 49mm;
+	top: 15mm;
+	width: 40mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	text-align: center;
+}
+
+.social_container {
+	position: absolute;
+	left: 16mm;
+	top: 38mm;
+	width: 32mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	line-height: 14pt;
+}
+.facebook, .twitter {
+	padding-left: 14pt;
+	background-position: left 0 top 0;
+	background-repeat: no-repeat;
+	background-size: 12pt;
+}
+.facebook { background-image: url(facebook.svg); }
+.twitter { background-image: url(twitter.svg); }
+
+.contacts_container {
+	position: absolute;
+	left: 49mm;
+	top: 38mm;
+	width: 40mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	line-height: 14pt;
+}
+.contacts_container * {
+	/*
+	display: flex;
+	justify-content: space-between;
+	text-align-last: justify;
+	*/
+	text-align: right;
+	width: 100%;
+}
+.email { letter-spacing: .04rem; }
+.mobile { letter-spacing: .15rem; }
+.office { letter-spacing: .15rem; }
+.office small {
+	font-size: 6pt;
+	margin-right: 3pt;
+	letter-spacing: 0;
+}
