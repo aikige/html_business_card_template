@@ -2,9 +2,11 @@
 
 This repository contains HTML template to create business card PDF.
 
+This template can be converted to PDF using [Save as PDF](https://support.google.com/chrome/answer/1069693?hl=en&ref_topic=7439636) feature, is you are using Google Chrome.
+
 ## Templates
 
-- `japanese.html` -- for Japanese side business card (91x55mm)
+- `japanese.html` -- for Japanese side business card (91x55mm, with 3mm margin = 97x61mm)
     - `data/japan.css` -- CSS for the template.
 
 ## Possible Adjustment
@@ -14,7 +16,7 @@ This repository contains HTML template to create business card PDF.
 ## Convert to PDF
 
 `convert_by_chrome.sh` is the shell script to convert HTML file to PDF image,
-using chrome, and which works on MacOS.
+using Chrome, and which works on MacOS.
 
 In other environment, please edit this file as needed.
 
