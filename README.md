@@ -31,6 +31,7 @@ convert_by_chrome.sh HTML_FILE PDF_FILE
 
 - Output of `japan.css` includes 3mm margin, which is usually required for source for business card on-demand printing.
 - Chrome tend to embed all fonts into PDF and generated PDF will be portable.
+- When reviewing layout using browser, print area is shown by gray line, but these line will be removed when page is converted to PDF.
 
 ## Reference
 

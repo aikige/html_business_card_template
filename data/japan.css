@@ -1,10 +1,3 @@
-@media print {
-	@page {
-		margin: 0;
-		padding: 0;
-		size: 97mm 61mm;	/* 91x55mm + 3mm margin */
-	}
-}
 
 * {
 	font-family: "Avenir Next", "ヒラギノ角ゴシック" !important;
@@ -14,21 +7,6 @@
 	padding: 0;
 }
 
-body {
-	width: 91mm;
-	max-height: 55mm;
-	background-color: white;
-	border: solid #FFF 3mm;
-	/*
-	border: solid #EEE 3mm;
-	*/
-	box-sizing: content-box;
-	background-image: url(logo.svg);
-	background-repeat: no-repeat;
-	background-position: left 9mm top 15mm;
-	background-size: 38mm;
-}
-
 /* Demi Bold Fonts */
 .name_en, .name_jp, .email, .mobile {
 	font-weight: 600;
@@ -36,6 +14,28 @@ body {
 /* Font Size */
 .name_jp { font-size: 12pt; }
 .web { font-size: 10pt; }
+
+body {
+	/* example to use background image */
+	background-image: url(https://picsum.photos/720?image=29);
+	background-color: rgba(255,255,255,0.7);
+	background-blend-mode: lighten;
+}
+
+/* container for print area */
+.page_container {
+	/* page size */
+	width: 91mm;
+	height: 55mm;
+	/* show logo */
+	background-image: url(logo.svg);
+	background-repeat: no-repeat;
+	background-position: left 9mm top 15mm;
+	background-size: 38mm;
+	/* show print size with gray line */
+	margin: 2.9mm;
+	border: solid gray 0.1mm;
+}
 
 .base_container {
 	align-content: flex-end;
@@ -91,4 +91,17 @@ body {
 	font-size: 6pt;
 	margin-right: 3pt;
 	letter-spacing: 0;
+}
+
+@media print {
+	@page {
+		margin: 0;
+		padding: 0;
+		size: 97mm 61mm;	/* 91x55mm + 3mm margin */
+	}
+	.page_container {
+		margin: 3mm;
+		margin-bottom: 0;
+		border: none;
+	}
 }
