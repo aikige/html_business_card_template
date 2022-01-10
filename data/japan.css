@@ -34,6 +34,7 @@ body {
 	background-size: 38mm;
 	/* show print size with gray line */
 	margin: 2.9mm;
+	margin-bottom: 0;
 	border: solid gray 0.1mm;
 }
 
