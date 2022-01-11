@@ -6,8 +6,8 @@ This template can be converted to PDF using [Save as PDF](https://support.google
 
 ## Templates
 
-- `japanese.html` -- for Japanese side business card (91x55mm, with 3mm margin = 97x61mm)
-    - `data/japan.css` -- CSS for the template.
+- [japanese.html](japanese.html) -- for Japanese side business card (91x55mm, with 3mm margin = 97x61mm)
+    - [data/japan.css](data/japan.css) -- CSS for the template.
 
 ## Possible Adjustment
 
@@ -15,8 +15,8 @@ This template can be converted to PDF using [Save as PDF](https://support.google
 
 ## Convert to PDF
 
-`convert_by_chrome.sh` is the shell script to convert HTML file to PDF image,
-using Chrome, and which works on MacOS.
+[convert_by_chrome.sh](convert_by_chrome.sh) is the shell script to convert HTML file to PDF image,
+using [Headless Chrome](https://developers.google.com/web/updates/2017/04/headless-chrome), and which works on MacOS.
 
 In other environment, please edit this file as needed.
 
@@ -35,7 +35,5 @@ convert_by_chrome.sh HTML_FILE PDF_FILE
 
 ## Reference
 
-- Facebook logo SVG: https://icons8.com/icon/118466/facebook
-- Twitter log SVG: https://icons8.com/icon/101340/twitter-circled
 - Facebook > Brand Elements > [Logo](https://www.facebook.com/brand/resources/facebookapp/logo)
 - Twitter > [Brand Toolkit](https://about.twitter.com/en/who-we-are/brand-toolkit)
