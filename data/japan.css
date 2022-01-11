@@ -59,10 +59,10 @@ body {
 	line-height: 14pt;
 }
 .facebook, .twitter {
-	padding-left: 14pt;
-	background-position: left 0 top 0;
+	padding-left: 12pt;
+	background-position: left 0 top 1pt;
 	background-repeat: no-repeat;
-	background-size: 12pt;
+	background-size: 10pt;
 }
 .facebook { background-image: url(facebook.svg); }
 .twitter { background-image: url(twitter.svg); }
