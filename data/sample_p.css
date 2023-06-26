@@ -1,0 +1,87 @@
+* {
+	font-family: "Arial", "ヒラギノ角ゴシック" !important;
+	font-weight: 400;	/* Regular / Normal */
+	font-size: 9pt;
+	margin: 0;
+	padding: 0;
+}
+
+/* Demi Bold Fonts */
+.name_en, .name_jp {
+	font-weight: 600;
+}
+/* Font Size */
+.name_jp { font-size: 12pt; }
+.web { font-size: 10pt; }
+
+body {
+	/* example to use background image */
+	background-image: url(https://picsum.photos/720?image=29);
+	background-color: rgba(255,255,255,0.7);
+	background-blend-mode: lighten;
+}
+
+/* container for print area */
+.page_container {
+	/* show logo */
+	background-image: url(logo.svg);
+	background-repeat: no-repeat;
+	background-position: left 9mm top 10mm;
+	background-size: 38mm;
+}
+
+.base_container {
+	position: absolute;
+	left: 10mm;
+	top: 30mm;
+	width: 45mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	text-align: center;
+}
+
+.social_container {
+	position: absolute;
+	left: 10mm;
+	top: 50mm;
+	width: 45mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	line-height: 14pt;
+}
+.facebook, .twitter {
+	padding-left: 12pt;
+	background-position: left 0 top 1pt;
+	background-repeat: no-repeat;
+	background-size: 10pt;
+}
+.facebook { background-image: url(facebook.svg); }
+.twitter { background-image: url(twitter.svg); }
+.twitter, .facebook { background-position: top 2pt left 0; }
+
+.contacts_container {
+	position: absolute;
+	left: 10mm;
+	top: 70mm;
+	width: 45mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	line-height: 14pt;
+}
+.contacts_container * {
+	/*
+	display: flex;
+	justify-content: space-between;
+	text-align-last: justify;
+	*/
+	text-align: left;
+	width: 100%;
+}
+.email { letter-spacing: .0rem; }
+.mobile { letter-spacing: .0rem; }
+.office { letter-spacing: .0rem; }
+.office small {
+	font-size: 6pt;
+	margin-right: 3pt;
+	letter-spacing: 0;
+}
