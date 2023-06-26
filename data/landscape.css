@@ -1,0 +1,22 @@
+.page_container {
+	/* page size */
+	width: 91mm;
+	height: 55mm;
+	/* show print size with gray line */
+	margin: 2.9mm;
+	margin-bottom: 0;
+	border: solid gray 0.1mm;
+}
+
+@media print {
+	@page {
+		margin: 0;
+		padding: 0;
+		size: 97mm 61mm;	/* 91x55mm + 3mm margin */
+	}
+	.page_container {
+		margin: 3mm;
+		margin-bottom: 0;
+		border: none;
+	}
+}
