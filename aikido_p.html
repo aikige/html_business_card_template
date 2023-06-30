@@ -1,0 +1,86 @@
+<html charset="UTF-8">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="data/portrait.css">
+<style>
+* {
+  font-family: "Helvetica", "ヒラギノ角ゴシック" !important;
+	font-weight: 400;	/* Regular / Normal */
+	font-size: 8pt;
+	margin: 0;
+	padding: 0;
+}
+/* Demi Bold Fonts */
+.name_en, .name_jp {
+	font-weight: 600;
+}
+.name_en {
+  margin-top: 6pt;
+}
+/* Font Size */
+body {
+  background-image: url(data/obi.svg);
+	background-repeat: no-repeat;
+	background-position: left 0 top 40mm;
+	background-size: 61mm;
+}
+.base_container {
+	position: absolute;
+	left: 3mm;
+	top: 15mm;
+	width: 55mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	text-align: center;
+}
+.name_jp { font-size: 14pt; }
+.name_en { font-size: 9pt; }
+.title { font-size: 8pt; }
+.contacts_container {
+	position: absolute;
+	left: 10mm;
+	top: 55mm;
+	width: 45mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	line-height: 12pt;
+}
+.contacts_container h2 {
+  font-size: 8pt;
+  margin-top: 4pt;
+}
+.facebook, .twitter, .email, .mobile, .web {
+	padding-left: 12pt;
+	background-position: left 0 top 1.5pt;
+	background-repeat: no-repeat;
+	background-size: 9pt;
+}
+.facebook { background-image: url(icons/facebook_m.svg); }
+.twitter { background-image: url(icons/twitter_m.svg); }
+.mobile { background-image: url(icons/phone.svg); }
+.web { background-image: url(icons/www.svg); }
+.email { background-image: url(icons/mail.svg); }
+
+</style>
+  </head>
+  <body>
+    <div class="page_container">
+      <div class="base_container">
+        <p class="title">◯◯◯市合気道連盟 理事</p>
+        <p class="title">◯◯◯◯道場 指導員</p>
+        <p class="name_en">AIKI Taro</p>
+        <p class="name_jp">合気 太郎</p>
+      </div>
+      <div class="contacts_container">
+        <p class="email">aiki@example.com</p>
+        <p class="mobile">000-0000-0000</p>
+        <h2>◯◯◯◯道場</h2>
+        <p class="web">www.example.com</p>
+        <h2>◯◯◯合気道教室</h2>
+        <p class="twitter">@example</p>
+        <p class="web">www.example.com</p>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- vim: set ts=2 sw=2 sts=2 expandtab:-->
