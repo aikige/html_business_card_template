@@ -56,8 +56,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: 10pt;
 }
-.facebook { background-image: url(facebook.svg); }
-.twitter { background-image: url(twitter.svg); }
+.facebook { background-image: url(../icons/facebook.svg); }
+.twitter { background-image: url(../icons/twitter.svg); }
 
 .contacts_container {
 	position: absolute;
