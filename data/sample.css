@@ -22,7 +22,7 @@ body {
 }
 
 /* container for print area */
-.page_container {
+.container {
 	/* show logo */
 	background-image: url(logo.svg);
 	background-repeat: no-repeat;
