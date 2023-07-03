@@ -21,28 +21,20 @@
 body {
   background-image: url(data/obi.svg);
 	background-repeat: no-repeat;
-	background-position: left 0 top 40mm;
-	background-size: 61mm;
+	background-position: left -0.5mm top 40mm;
+	background-size: 62mm;
 }
 .base_container {
-	position: absolute;
-	left: 3mm;
-	top: 15mm;
-	width: 55mm;
-	padding: 0;
-	background: rgba(200,200,200,0.0);
+	margin: 13mm 0 0;
 	text-align: center;
 }
 .name_jp { font-size: 14pt; }
 .name_en { font-size: 9pt; }
 .title { font-size: 8pt; }
 .contacts_container {
-	position: absolute;
-	left: 10mm;
-	top: 55mm;
-	width: 45mm;
+  width: fit-content;
+  margin: 17mm auto 0;
 	padding: 0;
-	background: rgba(200,200,200,0.0);
 	line-height: 12pt;
 }
 .contacts_container h2 {
@@ -64,21 +56,23 @@ body {
 </style>
   </head>
   <body>
-    <div class="page_container">
-      <div class="base_container">
-        <p class="title">◯◯◯市合気道連盟 理事</p>
-        <p class="title">◯◯◯◯道場 指導員</p>
-        <p class="name_en">AIKI Taro</p>
-        <p class="name_jp">合気 太郎</p>
-      </div>
-      <div class="contacts_container">
-        <p class="email">aiki@example.com</p>
-        <p class="mobile">000-0000-0000</p>
-        <h2>◯◯◯◯道場</h2>
-        <p class="web">www.example.com</p>
-        <h2>◯◯◯合気道教室</h2>
-        <p class="twitter">@example</p>
-        <p class="web">www.example.com</p>
+    <div class="page">
+      <div class="page_container">
+        <div class="base_container">
+          <p class="title">◯◯◯市合気道連盟 理事</p>
+          <p class="title">◯◯◯◯道場 指導員</p>
+          <p class="name_en">AIKI Taro</p>
+          <p class="name_jp">合気 太郎</p>
+        </div>
+        <div class="contacts_container">
+          <p class="email">aiki@example.com</p>
+          <p class="mobile">000-0000-0000</p>
+          <h2>◯◯◯◯道場</h2>
+          <p class="web">www.example.com</p>
+          <h2>◯◯◯合気道教室</h2>
+          <p class="twitter">@example</p>
+          <p class="web">www.example.com</p>
+        </div>
       </div>
     </div>
   </body>
