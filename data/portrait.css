@@ -1,11 +1,26 @@
-.page_container {
+body {
+	margin: 0;
+	padding: 0;
+}
+.page {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 61mm;
+	height: 94mm;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.container {
 	/* page size */
+	position: absolute;
+	left: calc(3mm - 1px);
+	top: calc(3mm - 1px);
 	width: 55mm;
 	height: 91mm;
 	/* show print size with gray line */
-	margin: 2.9mm;
-	margin-bottom: 0;
-	border: solid gray 0.1mm;
+	border: solid gray 1px;
 }
 
 @media print {
@@ -14,9 +29,9 @@
 		padding: 0;
 		size: 61mm 97mm;	/* 91x55mm + 3mm margin */
 	}
-	.page_container {
-		margin: 3mm;
-		margin-bottom: 0;
+	.container {
+		left: 3mm;
+		top: 3mm;
 		border: none;
 	}
 }
