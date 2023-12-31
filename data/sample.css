@@ -14,11 +14,12 @@
 .name_jp { font-size: 12pt; }
 .web { font-size: 10pt; }
 
-body {
+.page {
 	/* example to use background image */
 	background-image: url(https://picsum.photos/720?image=29);
 	background-color: rgba(255,255,255,0.7);
 	background-blend-mode: lighten;
+	background-size: cover;
 }
 
 /* container for print area */
@@ -44,7 +45,7 @@ body {
 .social_container {
 	position: absolute;
 	left: 16mm;
-	top: 38mm;
+	top: 35mm;
 	width: 32mm;
 	padding: 0;
 	background: rgba(200,200,200,0.0);
@@ -61,8 +62,8 @@ body {
 
 .contacts_container {
 	position: absolute;
-	left: 49mm;
-	top: 38mm;
+	left: 45mm;
+	top: 35mm;
 	width: 40mm;
 	padding: 0;
 	background: rgba(200,200,200,0.0);
@@ -77,9 +78,9 @@ body {
 	text-align: right;
 	width: 100%;
 }
-.email { letter-spacing: .04rem; }
-.mobile { letter-spacing: .15rem; }
-.office { letter-spacing: .15rem; }
+.email { letter-spacing: .01rem; }
+.mobile { letter-spacing: .07rem; }
+.office { letter-spacing: 0rem; }
 .office small {
 	font-size: 6pt;
 	margin-right: 3pt;
