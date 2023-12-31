@@ -14,11 +14,12 @@
 .name_jp { font-size: 12pt; }
 .web { font-size: 10pt; }
 
-body {
+.page {
 	/* example to use background image */
 	background-image: url(https://picsum.photos/720?image=29);
 	background-color: rgba(255,255,255,0.7);
 	background-blend-mode: lighten;
+	background-size: cover;
 }
 
 /* container for print area */
@@ -32,7 +33,7 @@ body {
 
 .base_container {
 	position: absolute;
-	left: 10mm;
+	left: 5mm;
 	top: 30mm;
 	width: 45mm;
 	padding: 0;
@@ -40,10 +41,29 @@ body {
 	text-align: center;
 }
 
+.base_container_v {
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	position: absolute;
+	left: 5mm;
+	top: 24mm;
+	width: 45mm;
+	padding: 0;
+	background: rgba(200,200,200,0.0);
+	text-align: left;
+	vertical-align: middle;
+}
+
+.base_container_v > * {
+	writing-mode: vertical-rl;
+}
+
+
 .social_container {
 	position: absolute;
 	left: 10mm;
-	top: 50mm;
+	top: 53mm;
 	width: 45mm;
 	padding: 0;
 	background: rgba(200,200,200,0.0);
