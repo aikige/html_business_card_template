@@ -1,5 +1,8 @@
 #!/bin/bash
 export PATH=/Applications/Google\ Chrome.app/Contents/MacOS:$PATH
+function chrome() {
+  Google\ Chrome $@
+}
 opt="--headless --disable-gpu"
 #opt="--headless=new --remote-debugging-port=0"
 if [[ "$2" =~ _l\.png$ ]]; then
@@ -14,4 +17,4 @@ elif [[ "$2" =~ \.pdf$ ]]; then
 fi
 opt+=" --virtual-time-budget=1000"
 #opt+=" --timeout=1000"
-Google\ Chrome $opt $1
+chrome $opt $1
