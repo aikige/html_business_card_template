@@ -1,3 +1,4 @@
 icons/*.svg
 actual/*
+*.pdf
 .DS_Store
