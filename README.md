@@ -6,14 +6,27 @@ This template can be converted to PDF using [Save as PDF](https://support.google
 
 ## CSS
 
-- [data/businesscard.css](data/businesscard.css) -- the main CSS file used to create HTML based business card design.
+- [businesscard.css](data/businesscard.css) -- the main CSS file used to create HTML based business card design.
+- [landscape.css](landscape.css) -- for 91x55mm business cards.
+- [portrait.css](portrait.css) -- for 55x91mm business cards.
 
-## Examples
+These CSS assumes following document structure:
+```
+<html>
+  <body>
+    <div class="page"><!-- defines print area with print margin -->
+      <div class="container"><!-- defines size of business card -->
+        <!-- business card content -->
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+## Basic Examples
 
 - [japanese_l.html](japanese_l.html) -- for Japanese side business card (91x55mm, with 3mm margin = 97x61mm)
-    - [data/landscape.css](data/landscape.css) -- CSS for the template.
 - [japanese_p.html](japanese_p.html) -- for Japanese side business card (55x91mm, with 3mm margin = 61x97mm)
-    - [data/landscape.css](data/landscape.css) -- CSS for the template.
 
 ## Size Adjustment
 
@@ -42,10 +55,9 @@ If you are using business card in other dimension, please adjust like following:
       <div class="container">
         <!-- design inside here -->
       </div>
-  </div>
+    </div>
   </body>
 ```
-
 
 ## Convert to PDF
 
