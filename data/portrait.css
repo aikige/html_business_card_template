@@ -1,37 +1,7 @@
-body {
-	margin: 0;
-	padding: 0;
-}
-.page {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 61mm;
-	height: 97mm;
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-.container {
-	/* page size */
-	position: absolute;
-	left: calc(3mm - 1px);
-	top: calc(3mm - 1px);
-	width: 55mm;
-	height: 91mm;
-	/* show print size with gray line */
-	border: solid gray 1px;
-}
-
-@media print {
-	@page {
-		margin: 0;
-		padding: 0;
-		size: 61mm 97mm;	/* 91x55mm + 3mm margin */
-	}
-	.container {
-		left: 3mm;
-		top: 3mm;
-		border: none;
-	}
+@import url('./landscape.css');
+:root {
+	--page-margin: 0mm;
+	--page-width: 55mm;
+	--page-height: 91mm;
+	--print-margin: 3mm;
 }
