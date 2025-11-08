@@ -10,7 +10,8 @@ if [[ "$2" =~ _l\.png$ ]]; then
 	px_size=${PX_SIZE-"367,231"}
 	opt+=" --screenshot=$2 --window-size=$px_size"
 elif [[ "$2" =~ _p\.png$ ]]; then
-	px_size=${PX_SIZE-"231,367"}
+	#px_size=${PX_SIZE-"231,367"}
+	px_size=${PX_SIZE-"231,500"}
 	opt+=" --screenshot=$2 --window-size=$px_size"
 elif [[ "$2" =~ \.pdf$ ]]; then
 	opt+=" --print-to-pdf=$2"
