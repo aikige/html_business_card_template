@@ -9,7 +9,8 @@ PDF_FILES_P=$(patsubst %.html,%.pdf,$(HTML_FILES_P))
 PNG_FILES_L=$(patsubst %.html,%.png,$(HTML_FILES_L))
 PNG_FILES_P=$(patsubst %.html,%.png,$(HTML_FILES_P))
 DEPS+=convert_by_chrome.sh
-PNG_SIZE_P=0,0,231,367
+# Note: 61x97mm=231x367px in 96dpi
+PNG_SIZE_P=231,367
 
 .PHONY: pdf png clean
 
@@ -36,7 +37,7 @@ $(PNG_FILES_L): %.png: %.html landscape.css $(DEPS)
 # Note: since screenshot in chrome has problem, generates larger image and crop it.
 $(PNG_FILES_P): %.png: %.html portrait.css $(DEPS)
 	bash convert_by_chrome.sh $< $@
-	python -c "$${CROP_PY}" $@ $@ $(PNG_SIZE_P)
+	python -c "$${CROP_PY}" $@ $@ 0,0,$(PNG_SIZE_P)
 
 clean:
 	-$(RM) $(PDF_FILES_L) $(PDF_FILES_P) $(PNG_FILES_L) $(PNG_FILES_P)
