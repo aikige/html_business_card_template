@@ -12,7 +12,7 @@ DEPS+=convert_by_chrome.sh
 # Note: 61x97mm=231x367px in 96dpi
 PNG_SIZE_P=231,367
 
-.PHONY: pdf png clean
+.PHONY: pdf png depend clean
 
 define CROP_PY
 import sys
