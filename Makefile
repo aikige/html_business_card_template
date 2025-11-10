@@ -39,5 +39,8 @@ $(PNG_FILES_P): %.png: %.html portrait.css $(DEPS)
 	bash convert_by_chrome.sh $< $@
 	python -c "$${CROP_PY}" $@ $@ 0,0,$(PNG_SIZE_P)
 
+depend: requirements.txt
+	python -m pip install -r $<
+
 clean:
 	-$(RM) $(PDF_FILES_L) $(PDF_FILES_P) $(PNG_FILES_L) $(PNG_FILES_P)
