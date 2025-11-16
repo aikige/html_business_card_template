@@ -35,9 +35,9 @@ $(PNG_FILES_L): %.png: %.html landscape.css $(DEPS)
 	bash convert_by_chrome.sh $< $@
 
 # Note: since screenshot in chrome has problem, generates larger image and crop it.
-$(PNG_FILES_P): %.png: %.html portrait.css $(DEPS)
+$(PNG_FILES_P): %.png: %.html portrait.css $(DEPS) crop.py
 	bash convert_by_chrome.sh $< $@
-	python -c "$${CROP_PY}" $@ $@ 0,0,$(PNG_SIZE_P)
+	python crop.py $@ $@ 0,0,$(PNG_SIZE_P)
 
 depend: requirements.txt
 	python -m pip install -r $<
