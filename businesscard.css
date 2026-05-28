@@ -5,11 +5,13 @@
 	--print-margin: 3mm;
 	--print-width: calc(var(--page-width) + (2 * var(--print-margin)));
 	--print-height: calc(var(--page-height) + (2 * var(--print-margin)));
+	--border-width: 1px;
 }
 body {
 	margin: 0;
 	padding: 0;
 }
+/* a page includes print margin */
 .page {
 	position: relative;
 	left: 0;
@@ -21,16 +23,18 @@ body {
 	border: none;
 	page-break-after: always;
 }
+/* a container of print area. all object must be placed inside this box */
 .container {
 	/* page size */
 	position: absolute;
-	left: calc(var(--print-margin) - 1px);
-	top: calc(var(--print-margin) - 1px);
-	width: calc(var(--page-width) - 2 * var(--page-margin));
-	height: calc(var(--page-height) - 2 * var(--page-margin));
+	margin: 0;
+	left: calc(var(--print-margin) - var(--border-width));
+	top: calc(var(--print-margin) - var(--border-width));
+	width: calc(var(--page-width) - (2 * var(--page-margin)));
+	height: calc(var(--page-height) - (2 * var(--page-margin)));
 	padding: var(--page-margin);
 	/* show print size with gray line */
-	border: solid gray 1px;
+	border: solid gray var(--border-width);
 }
 
 @media print {
