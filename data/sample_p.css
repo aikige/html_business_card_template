@@ -16,7 +16,7 @@
 
 .page {
 	/* example to use background image */
-	background-image: url(https://picsum.photos/720?image=29);
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Crepuscular_rays_over_parc_de_Noisiel_at_sunrise%2C_26_May_2019.jpg/960px-Crepuscular_rays_over_parc_de_Noisiel_at_sunrise%2C_26_May_2019.jpg);
 	background-color: rgba(255,255,255,0.7);
 	background-blend-mode: lighten;
 	background-size: cover;
