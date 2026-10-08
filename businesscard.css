@@ -21,7 +21,6 @@ body {
 	width: var(--print-width);
 	height: var(--print-height);
 	margin: 0;
-	margin: auto;
 	padding: 0;
 	border: none;
 	page-break-after: always;
