@@ -11,10 +11,13 @@ if [[ "$OSTYPE" == "cygwin" ]]; then
 	}
 else
 	function chrome() {
+	  echo Google\ Chrome $@
 	  Google\ Chrome $@
 	}
 	function adjpath() {
-		realpath $1
+		# Note: system default `realpath` has different behavior
+		# and GNU version (`grealpath`) is required.
+		grealpath $1
 	}
 fi
 opt="--headless --disable-gpu"
